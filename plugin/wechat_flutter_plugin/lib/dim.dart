@@ -9,7 +9,6 @@ export 'package:dim/pinyin/chinese_helper.dart';
 export 'package:dim/pinyin/dict_data.dart';
 export 'package:dim/pinyin/pinyin_exception.dart';
 export 'package:dim/pinyin/pinyin_format.dart';
-export 'package:dim/pinyin/chinese_helper.dart';
 export 'package:dim/pinyin/pinyin_resourece.dart';
 export 'package:dim/time/time_util.dart';
 

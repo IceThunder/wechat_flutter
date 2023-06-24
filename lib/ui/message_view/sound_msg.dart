@@ -107,12 +107,13 @@ class _SoundMsgState extends State<SoundMsg> with TickerProviderStateMixin {
   }
 
   playNew(url) async {
-    int result = await audioPlayer.play(url);
-    if (result == 1) {
-      showToast(context, '播放中');
-    } else {
-      showToast(context, '播放出问题了');
-    }
+    await audioPlayer.play(url);
+    // int result = await audioPlayer.play(url);
+    // if (result == 1) {
+    //   showToast(context, '播放中');
+    // } else {
+    //   showToast(context, '播放出问题了');
+    // }
   }
 
   @override

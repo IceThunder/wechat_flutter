@@ -380,16 +380,16 @@ class _ShootPageState extends State<ShootPage> with WidgetsBindingObserver {
   }
 
   void onVideoRecordButtonPressed() {
-    startVideoRecording().then((String filePath) {
+    startVideoRecording().then((_) {
       if (mounted) setState(() {});
-      if (filePath != null) showToast(context, '开始录制');
+      showToast(context, '开始录制');
     });
   }
 
   void onStopButtonPressed() {
-    stopVideoRecording().then((_) {
+    stopVideoRecording().then((String filePath) {
       if (mounted) setState(() {});
-      showToast(context, '视频记录到$videoPath');
+      if (filePath != null) showToast(context, '视频记录到$videoPath');
     });
   }
 
@@ -407,9 +407,28 @@ class _ShootPageState extends State<ShootPage> with WidgetsBindingObserver {
     });
   }
 
-  Future<String> startVideoRecording() async {
+  Future<void> startVideoRecording() async {
     if (!controller.value.isInitialized) {
       showToast(context, '异常: 首先选择一个相机');
+      return null;
+    }
+
+    if (controller.value.isRecordingVideo) {
+      // A recording is already started, do nothing.
+      return null;
+    }
+
+    try {
+      // 开始录像
+      await controller.startVideoRecording();
+    } on CameraException catch (e) {
+      _showCameraException(e);
+      return null;
+    }
+  }
+
+  Future<String> stopVideoRecording() async {
+    if (!controller.value.isRecordingVideo) {
       return null;
     }
 
@@ -418,34 +437,18 @@ class _ShootPageState extends State<ShootPage> with WidgetsBindingObserver {
     await Directory(dirPath).create(recursive: true);
     final String filePath = '$dirPath/${timestamp()}.mp4';
 
-    if (controller.value.isRecordingVideo) {
-      // A recording is already started, do nothing.
-      return null;
-    }
-
     try {
       videoPath = filePath;
-      await controller.startVideoRecording(filePath);
+      final video = await controller.stopVideoRecording();
+      // 保存video
+      video.saveTo(filePath);
     } on CameraException catch (e) {
       _showCameraException(e);
       return null;
     }
-    return filePath;
-  }
-
-  Future<void> stopVideoRecording() async {
-    if (!controller.value.isRecordingVideo) {
-      return null;
-    }
-
-    try {
-      await controller.stopVideoRecording();
-    } on CameraException catch (e) {
-      _showCameraException(e);
-      return null;
-    }
-
     await _startVideoPlayer();
+
+    return filePath;
   }
 
   Future<void> pauseVideoRecording() async {
@@ -513,7 +516,8 @@ class _ShootPageState extends State<ShootPage> with WidgetsBindingObserver {
     }
 
     try {
-      await controller.takePicture(filePath);
+      final XFile pic = await controller.takePicture();
+      pic.saveTo(filePath);
     } on CameraException catch (e) {
       _showCameraException(e);
       return null;
