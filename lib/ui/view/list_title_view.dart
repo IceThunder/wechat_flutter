@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
 
-class ListTileView extends StatelessWidget {
+class ListTitleView extends StatelessWidget {
   final BoxBorder border;
   final VoidCallback onPressed;
   final String title;
@@ -17,7 +17,7 @@ class ListTileView extends StatelessWidget {
   final EdgeInsetsGeometry margin;
   final BoxFit fit;
 
-  ListTileView({
+  ListTitleView({
     this.border,
     this.onPressed,
     this.title,

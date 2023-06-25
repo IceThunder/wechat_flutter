@@ -98,7 +98,7 @@ class UpdateDialogState extends State<UpdateDialog> {
                         },
                         child: Text(
                           '更新',
-                          style: TextStyle(color: Colors.green, fontSize: 16),
+                          style: TextStyle(color: mainThemeColor, fontSize: 16),
                         )),
                   ),
                 ],

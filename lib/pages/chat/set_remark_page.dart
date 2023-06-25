@@ -1,4 +1,4 @@
-import 'package:wechat_flutter/ui/orther/tip_verify_Input.dart';
+import 'package:wechat_flutter/ui/other/tip_verify_Input.dart';
 import 'package:flutter/material.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
 
-/// 微信领取红包对话框
+/// 爱信领取红包对话框
 Future redReceiveDialog(BuildContext context) {
   return showDialog(
     context: context,

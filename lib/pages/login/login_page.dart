@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: new Text(
                     model.area,
                     style: TextStyle(
-                        color: Colors.green,
+                        color: mainThemeColor,
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400),
                   ),
@@ -144,7 +144,7 @@ class _LoginPageState extends State<LoginPage> {
           margin: EdgeInsets.symmetric(horizontal: 10.0),
           color: _tC.text == ''
               ? Color.fromRGBO(226, 226, 226, 1.0)
-              : Color.fromRGBO(8, 191, 98, 1.0),
+              : mainThemeColor,
           onTap: () {
             if (_tC.text == '') {
               showToast(context, '随便输入三位或以上');

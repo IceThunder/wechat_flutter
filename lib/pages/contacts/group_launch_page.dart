@@ -169,7 +169,7 @@ class _GroupLaunchPageState extends State<GroupLaunchPage> {
                 color: Colors.white.withOpacity(0.8),
                 border: Border(
                   bottom: BorderSide(
-                      color: isSearch ? Colors.green : lineColor, width: 0.3),
+                      color: isSearch ? mainThemeColor : lineColor, width: 0.3),
                 ),
               ),
               width: winWidth(context),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../config/const.dart';
+
 class ComMomButton extends StatelessWidget {
   final double width;
   final double height;
@@ -30,8 +32,8 @@ class ComMomButton extends StatelessWidget {
     this.isBorder = false,
     this.gradient = const LinearGradient(
       colors: [
-        Color.fromRGBO(8, 191, 98, 1.0),
-        Color.fromRGBO(8, 191, 98, 1.0),
+        mainThemeColor,
+        mainThemeColor,
       ],
     ),
     this.enable = true,

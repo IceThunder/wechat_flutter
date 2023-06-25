@@ -49,7 +49,7 @@ class _PublishDynamicPageState extends State<PublishDynamicPage> {
                   Navigator.of(context).pop();
                 },
                 child: Text('发表', style: TextStyle(color: Colors.white)),
-                color: Colors.green),
+                color: mainThemeColor),
           )
         ],
       ),

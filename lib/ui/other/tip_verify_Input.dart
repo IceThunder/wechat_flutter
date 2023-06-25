@@ -2,19 +2,25 @@ import 'package:flutter/material.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
 
-class VerifyInput extends StatefulWidget {
+class TipVerifyInput extends StatefulWidget {
   final String title;
   final String defStr;
   final TextEditingController controller;
   final FocusNode focusNode;
+  final Color color;
 
-  VerifyInput({this.title, this.controller, this.defStr = '', this.focusNode});
+  TipVerifyInput(
+      {this.title,
+      this.controller,
+      this.defStr = '',
+      this.focusNode,
+      this.color = Colors.white});
 
   @override
   _VerifyInputState createState() => new _VerifyInputState();
 }
 
-class _VerifyInputState extends State<VerifyInput> {
+class _VerifyInputState extends State<TipVerifyInput> {
   @override
   void initState() {
     super.initState();
@@ -57,10 +63,6 @@ class _VerifyInputState extends State<VerifyInput> {
     return new Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        new Text(
-          widget.title ?? '',
-          style: TextStyle(color: mainTextColor, fontSize: 15.0),
-        ),
         new Space(height: mainSpace),
         new Expanded(
           child: new Container(
@@ -69,16 +71,22 @@ class _VerifyInputState extends State<VerifyInput> {
               border: Border(
                 bottom: BorderSide(
                     color: widget.focusNode.hasFocus
-                        ? Colors.green
+                        ? mainThemeColor
                         : lineColor.withOpacity(0.5),
                     width: 0.5),
               ),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 10.0),
+            padding: EdgeInsets.symmetric(horizontal: 5.0),
             alignment: Alignment.center,
             child: new Row(children: view),
           ),
-        )
+        ),
+        new Space(height: mainSpace),
+        new Text(
+          widget.title ?? '',
+          style:
+              TextStyle(color: mainTextColor.withOpacity(0.7), fontSize: 15.0),
+        ),
       ],
     );
   }
@@ -88,8 +96,9 @@ class _VerifyInputState extends State<VerifyInput> {
     return new Container(
       height: 100.0,
       width: winWidth(context),
-      color: Colors.white,
+      color: widget.color,
       padding: EdgeInsets.all(10.0),
+      margin: EdgeInsets.symmetric(horizontal: 10.0),
       child: contentBuild(),
     );
   }

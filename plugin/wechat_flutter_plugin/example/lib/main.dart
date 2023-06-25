@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: '微信',
+      title: '爱信',
       home: new Scaffold(
         body: new MyHome(),
       ),

@@ -1,4 +1,4 @@
-import 'package:wechat_flutter/ui/orther/label_row.dart';
+import 'package:wechat_flutter/ui/other/label_row.dart';
 import 'package:flutter/material.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';

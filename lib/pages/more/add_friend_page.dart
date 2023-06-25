@@ -11,7 +11,7 @@ import 'package:wechat_flutter/im/info_handle.dart';
 import 'package:wechat_flutter/pages/more/add_friend_details.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
-import 'package:wechat_flutter/ui/view/list_tile_view.dart';
+import 'package:wechat_flutter/ui/view/list_title_view.dart';
 import 'package:wechat_flutter/ui/view/search_main_view.dart';
 import 'package:wechat_flutter/ui/view/search_tile_view.dart';
 import 'package:provider/provider.dart';
@@ -32,7 +32,7 @@ class _AddFriendPageState extends State<AddFriendPage> {
   TextEditingController searchC = new TextEditingController();
 
   Widget buildItem(item) {
-    return new ListTileView(
+    return new ListTitleView(
       border: item['title'] == '雷达加朋友'
           ? null
           : Border(top: BorderSide(color: lineColor, width: 0.2)),
@@ -75,15 +75,10 @@ class _AddFriendPageState extends State<AddFriendPage> {
         'title': '公众号',
         'label': '获取更多资讯和服务',
       },
-      {
-        'icon': contactAssets + 'ic_search_wework.webp',
-        'title': '企业微信联系人',
-        'label': '通过手机号搜索企业微信用户',
-      },
     ];
     var content = [
       new SearchMainView(
-        text: '微信号/手机号',
+        text: '爱信号/手机号',
         onTap: () {
           isSearch = true;
           setState(() {});
@@ -96,7 +91,7 @@ class _AddFriendPageState extends State<AddFriendPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text(
-              '我的微信号：${currentUser ?? '[${model.account}]'}',
+              '我的爱信号：${currentUser ?? '[${model.account}]'}',
               style: TextStyle(color: mainTextColor, fontSize: 14.0),
             ),
             new Space(width: mainSpace * 1.5),
@@ -219,7 +214,7 @@ class _AddFriendPageState extends State<AddFriendPage> {
             controller: searchC,
             style: TextStyle(textBaseline: TextBaseline.alphabetic),
             decoration:
-                InputDecoration(hintText: '微信号/手机号', border: InputBorder.none),
+                InputDecoration(hintText: '爱信号/手机号', border: InputBorder.none),
             onChanged: (txt) {
               if (strNoEmpty(searchC.text))
                 showBtn = true;

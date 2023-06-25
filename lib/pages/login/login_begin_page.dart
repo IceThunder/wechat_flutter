@@ -29,7 +29,7 @@ class _LoginBeginPageState extends State<LoginBeginPage> {
           text: S.of(context).register,
           color: bgColor,
           style:
-              TextStyle(fontSize: 15.0, color: Color.fromRGBO(8, 191, 98, 1.0)),
+              TextStyle(fontSize: 15.0, color: mainThemeColor),
           margin: EdgeInsets.only(right: 10.0),
           onTap: () => routePush(
               ProviderConfig.getInstance().getLoginPage(new RegisterPage())),

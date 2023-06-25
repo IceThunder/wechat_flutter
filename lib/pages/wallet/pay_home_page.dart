@@ -58,7 +58,7 @@ class _PayHomePageState extends State<PayHomePage> {
         children: [
           new Container(
             decoration: BoxDecoration(
-              color: Colors.green,
+              color: mainThemeColor,
               borderRadius: BorderRadius.all(Radius.circular(5)),
             ),
             margin: EdgeInsets.symmetric(horizontal: 8),

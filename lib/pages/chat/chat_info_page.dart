@@ -6,8 +6,8 @@ import 'package:wechat_flutter/im/info_handle.dart';
 import 'package:wechat_flutter/pages/home/search_page.dart';
 import 'package:wechat_flutter/pages/settings/chat_background_page.dart';
 import 'package:wechat_flutter/ui/dialog/confirm_alert.dart';
-import 'package:wechat_flutter/ui/item/chat_mamber.dart';
-import 'package:wechat_flutter/ui/orther/label_row.dart';
+import 'package:wechat_flutter/ui/item/chat_member.dart';
+import 'package:wechat_flutter/ui/other/label_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -54,7 +54,7 @@ class _ChatInfoPageState extends State<ChatInfoPage> {
     ];
 
     return [
-      new ChatMamBer(model: model),
+      new ChatMemBer(model: model),
       new LabelRow(
         label: '查找聊天记录',
         margin: EdgeInsets.only(top: 10.0),

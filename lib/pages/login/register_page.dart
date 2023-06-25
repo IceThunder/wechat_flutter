@@ -54,7 +54,7 @@ class _RegisterPageState extends State<RegisterPage> {
               label: S.of(context).nickName,
               hint: S.of(context).exampleName,
               bottomLineColor:
-                  nickF.hasFocus ? Colors.green : lineColor.withOpacity(0.5),
+                  nickF.hasFocus ? mainThemeColor : lineColor.withOpacity(0.5),
               focusNode: nickF,
               controller: nickC,
               onTap: () => setState(() {}),
@@ -89,7 +89,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 child: new Text(
                   model.area,
                   style: TextStyle(
-                    color: Colors.green,
+                    color: mainThemeColor,
                     fontSize: 16.0,
                     fontWeight: FontWeight.w400,
                   ),
@@ -119,7 +119,7 @@ class _RegisterPageState extends State<RegisterPage> {
         controller: pWC,
         focusNode: pWF,
         bottomLineColor:
-            pWF.hasFocus ? Colors.green : lineColor.withOpacity(0.5),
+            pWF.hasFocus ? mainThemeColor : lineColor.withOpacity(0.5),
         onTap: () => setState(() {}),
         onChanged: (str) {
           setState(() {});
@@ -166,7 +166,7 @@ class _RegisterPageState extends State<RegisterPage> {
         margin: EdgeInsets.only(top: 20.0),
         color: pWC.text == ''
             ? Color.fromRGBO(226, 226, 226, 1.0)
-            : Color.fromRGBO(8, 191, 98, 1.0),
+            : mainThemeColor,
         onTap: () {
           if (!strNoEmpty(pWC.text)) return;
           if (!isMobilePhoneNumber(phoneC.text)) {

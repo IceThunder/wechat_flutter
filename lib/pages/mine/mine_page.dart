@@ -9,7 +9,7 @@ import 'package:wechat_flutter/pages/wallet/pay_home_page.dart';
 import 'package:wechat_flutter/provider/global_model.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
-import 'package:wechat_flutter/ui/view/list_tile_view.dart';
+import 'package:wechat_flutter/ui/view/list_title_view.dart';
 
 class MinePage extends StatefulWidget {
   @override
@@ -32,7 +32,7 @@ class _MinePageState extends State<MinePage> {
   }
 
   Widget buildContent(item) {
-    return new ListTileView(
+    return new ListTitleView(
       border: item['label'] == '支付' ||
               item['label'] == '设置' ||
               item['label'] == '表情'
@@ -97,7 +97,7 @@ class _MinePageState extends State<MinePage> {
                   fontWeight: FontWeight.w500),
             ),
             new Text(
-              '微信号：' + model.account,
+              '爱信号：' + model.account,
               style: TextStyle(color: mainTextColor),
             ),
           ],

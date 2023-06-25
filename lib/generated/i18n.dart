@@ -77,7 +77,7 @@ class $zh_CN extends S {
   @override
   String get readAgree => "已阅读并同意 ";
   @override
-  String get weChatSecurityCenter => "微信安全中心";
+  String get weChatSecurityCenter => "爱信安全中心";
   @override
   String get numberRegister => "手机号注册";
   @override
@@ -93,7 +93,7 @@ class $zh_CN extends S {
   @override
   String get macao => "澳门";
   @override
-  String get protocolName => "《微信软件许可及服务协议》";
+  String get protocolName => "《爱信软件许可及服务协议》";
   @override
   String get userLoginTip => "用微信号/QQ号/邮箱登录";
   @override
@@ -111,7 +111,7 @@ class $zh_CN extends S {
   @override
   String get mobileNumberLogin => "手机号登录";
   @override
-  String get appName => "微信";
+  String get appName => "爱信";
   @override
   String get nickName => "昵称";
   @override
@@ -123,7 +123,7 @@ class $zh_CN extends S {
   @override
   String get hongKong => "香港";
   @override
-  String get protocolTitle => "微信软件许可及服务协议";
+  String get protocolTitle => "爱信软件许可及服务协议";
   @override
   String get singapore => "新加坡";
   @override
@@ -139,7 +139,7 @@ class $zh_CN extends S {
   @override
   String get nextStep => "下一步";
   @override
-  String get weChat => "微信";
+  String get weChat => "爱信";
   @override
   String get exampleName => "例如: 陈晨";
   @override

@@ -30,7 +30,7 @@ class _SelectLocationPageState extends State<SelectLocationPage> {
           ),
           new Text(
             '${item['code']}',
-            style: TextStyle(fontSize: 15.0, color: Colors.green),
+            style: TextStyle(fontSize: 15.0, color: mainThemeColor),
           ),
         ],
       ),

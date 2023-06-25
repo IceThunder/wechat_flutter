@@ -50,7 +50,7 @@ class _ChatMorePageState extends State<ChatMorePage> {
         pathThumbSize: 80,
         gridCount: 4,
         selectedAssets: assets,
-        themeColor: Colors.green,
+        themeColor: mainThemeColor,
         // textDelegate: DefaultAssetsPickerTextDelegate(),
         routeCurve: Curves.easeIn,
         routeDuration: const Duration(milliseconds: 500),

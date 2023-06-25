@@ -10,7 +10,7 @@ class GlobalModel extends ChangeNotifier {
   BuildContext context;
 
   ///app的名字
-  String appName = "微信flutter";
+  String appName = "爱信";
 
   /// 用户信息
   String account = '';

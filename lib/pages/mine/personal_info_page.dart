@@ -11,7 +11,7 @@ import 'package:wechat_flutter/im/info_handle.dart';
 import 'package:wechat_flutter/pages/mine/change_name_page.dart';
 import 'package:wechat_flutter/provider/global_model.dart';
 
-import 'package:wechat_flutter/ui/orther/label_row.dart';
+import 'package:wechat_flutter/ui/other/label_row.dart';
 
 class PersonalInfoPage extends StatefulWidget {
   @override
@@ -80,7 +80,7 @@ class _PersonalInfoPageState extends State<PersonalInfoPage> {
 
   Widget body(GlobalModel model) {
     List data = [
-      {'label': '微信号', 'value': model.account},
+      {'label': '爱信号', 'value': model.account},
       {'label': '二维码名片', 'value': ''},
       {'label': '更多', 'value': ''},
       {'label': '我的地址', 'value': ''},
@@ -123,7 +123,7 @@ class _PersonalInfoPageState extends State<PersonalInfoPage> {
       label: item['label'],
       rValue: item['value'],
       isLine: item['label'] == '我的地址' || item['label'] == '更多' ? false : true,
-      isRight: item['label'] == '微信号' ? false : true,
+      isRight: item['label'] == '爱信号' ? false : true,
       margin: EdgeInsets.only(bottom: item['label'] == '更多' ? 10.0 : 0.0),
       rightW: item['label'] == '二维码名片'
           ? new Image.asset('assets/images/mine/ic_small_code.png',

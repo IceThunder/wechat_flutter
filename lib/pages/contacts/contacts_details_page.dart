@@ -5,8 +5,8 @@ import 'package:wechat_flutter/pages/wechat_friends/page/wechat_friends_circle.d
 import 'package:wechat_flutter/provider/global_model.dart';
 import 'package:wechat_flutter/ui/dialog/friend_item_dialog.dart';
 import 'package:wechat_flutter/ui/item/contact_card.dart';
-import 'package:wechat_flutter/ui/orther/button_row.dart';
-import 'package:wechat_flutter/ui/orther/label_row.dart';
+import 'package:wechat_flutter/ui/other/button_row.dart';
+import 'package:wechat_flutter/ui/other/label_row.dart';
 import 'package:flutter/material.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';

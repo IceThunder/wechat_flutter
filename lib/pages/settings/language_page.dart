@@ -12,8 +12,8 @@ class LanguagePage extends StatefulWidget {
 
 class _LanguagePageState extends State<LanguagePage> {
   final List<LanguageData> languageDatas = [
-    LanguageData("中文", "zh", "CN", "微信-flutter"),
-    LanguageData("English", "en", "US", "Wechat-flutter"),
+    LanguageData("中文", "zh", "CN", "爱信"),
+    LanguageData("English", "en", "US", "WechatAI"),
   ];
 
   @override

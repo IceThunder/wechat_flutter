@@ -73,7 +73,7 @@ class RootTabBarState extends State<RootTabBar> {
       items: pages,
       type: BottomNavigationBarType.fixed,
       currentIndex: currentIndex,
-      fixedColor: Colors.green,
+      fixedColor: mainThemeColor,
       unselectedItemColor: mainTextColor,
       onTap: (int index) {
         setState(() => currentIndex = index);

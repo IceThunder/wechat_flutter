@@ -1,14 +1,14 @@
 import 'dart:convert';
 
 import 'package:wechat_flutter/pages/more/add_friend_page.dart';
-import 'package:wechat_flutter/ui/orther/label_row.dart';
+import 'package:wechat_flutter/ui/other/label_row.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wechat_flutter/im/info_handle.dart';
 import 'package:wechat_flutter/pages/more/add_friend_details.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
-import 'package:wechat_flutter/ui/view/list_tile_view.dart';
+import 'package:wechat_flutter/ui/view/list_title_view.dart';
 import 'package:wechat_flutter/ui/view/search_main_view.dart';
 import 'package:wechat_flutter/ui/view/search_tile_view.dart';
 
@@ -28,7 +28,7 @@ class _NewFriendPageState extends State<NewFriendPage> {
   TextEditingController searchC = new TextEditingController();
 
   Widget buildItem(item) {
-    return new ListTileView(
+    return new ListTitleView(
       border: item['title'] == '雷达加朋友'
           ? null
           : Border(top: BorderSide(color: lineColor, width: 0.2)),
@@ -40,7 +40,7 @@ class _NewFriendPageState extends State<NewFriendPage> {
   Widget body() {
     var content = [
       new SearchMainView(
-        text: '微信号/手机号',
+        text: '爱信号/手机号',
         isBorder: true,
         onTap: () {
           isSearch = true;
@@ -151,7 +151,7 @@ class _NewFriendPageState extends State<NewFriendPage> {
             focusNode: searchF,
             controller: searchC,
             decoration:
-                InputDecoration(hintText: '微信号/手机号', border: InputBorder.none),
+                InputDecoration(hintText: '爱信号/手机号', border: InputBorder.none),
             onChanged: (txt) {
               if (strNoEmpty(searchC.text))
                 showBtn = true;

@@ -96,7 +96,7 @@ class _SelectMembersPageState extends State<SelectMembersPage> {
                     model.isSelect
                         ? CupertinoIcons.check_mark_circled_solid
                         : CupertinoIcons.check_mark_circled,
-                    color: model.isSelect ? Colors.green : Colors.grey,
+                    color: model.isSelect ? mainThemeColor : Colors.grey,
                   ),
                 ),
                 new ClipRRect(

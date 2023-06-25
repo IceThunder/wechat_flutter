@@ -55,7 +55,7 @@ class NewFriendCard extends StatelessWidget {
                         width: 60.0,
                         height: 30.0,
                         color: lineColor.withOpacity(0.2),
-                        style: TextStyle(color: Colors.green),
+                        style: TextStyle(color: mainThemeColor),
                         onTap: () {
                           if (onTap != null) {
                             onTap();

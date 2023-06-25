@@ -4,7 +4,7 @@ import 'package:wechat_flutter/ui/view/indicator_page_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
-import 'package:wechat_flutter/ui/view/list_tile_view.dart';
+import 'package:wechat_flutter/ui/view/list_title_view.dart';
 
 class DiscoverPage extends StatefulWidget {
   @override
@@ -26,7 +26,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
       }
     }
 
-    return new ListTileView(
+    return new ListTitleView(
       border: isShow()
           ? null
           : Border(bottom: BorderSide(color: lineColor, width: 0.3)),

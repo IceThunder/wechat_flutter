@@ -5,16 +5,16 @@ import 'package:wechat_flutter/pages/contacts/group_launch_page.dart';
 
 import 'package:wechat_flutter/tools/wechat_flutter.dart';
 
-class ChatMamBer extends StatefulWidget {
+class ChatMemBer extends StatefulWidget {
   final dynamic model;
 
-  ChatMamBer({this.model});
+  ChatMemBer({this.model});
 
   @override
-  _ChatMamBerState createState() => _ChatMamBerState();
+  _ChatMemBerState createState() => _ChatMemBerState();
 }
 
-class _ChatMamBerState extends State<ChatMamBer> {
+class _ChatMemBerState extends State<ChatMemBer> {
   @override
   Widget build(BuildContext context) {
     String face =

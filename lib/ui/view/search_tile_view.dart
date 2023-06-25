@@ -19,14 +19,14 @@ class SearchTileView extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 10.0),
             child: new Icon(
               Icons.map,
-              color: Colors.green,
+              color: mainThemeColor,
               size: 50.0,
             ),
           ),
           new Text('搜索：'),
           new Text(
             text,
-            style: TextStyle(color: Colors.green),
+            style: TextStyle(color: mainThemeColor),
           ),
         ],
       ),
@@ -36,7 +36,7 @@ class SearchTileView extends StatelessWidget {
       children: <Widget>[
         new Padding(
           padding: EdgeInsets.symmetric(horizontal: 10.0),
-          child: new Icon(Icons.map, color: Colors.green, size: 50.0),
+          child: new Icon(Icons.map, color: mainThemeColor, size: 50.0),
         ),
         new Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +48,7 @@ class SearchTileView extends StatelessWidget {
                 new Text('搜一搜：'),
                 new Text(
                   text,
-                  style: TextStyle(color: Colors.green),
+                  style: TextStyle(color: mainThemeColor),
                 ),
               ],
             ),

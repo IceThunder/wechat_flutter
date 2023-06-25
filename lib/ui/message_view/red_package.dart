@@ -55,7 +55,7 @@ class RedPackage extends StatelessWidget {
               ),
               HorizontalLine(color: Colors.white, height: 1),
               Text(
-                '微信红包',
+                '爱信红包',
                 style: TextStyle(
                     color: Colors.white.withOpacity(0.7), fontSize: 8),
               )
