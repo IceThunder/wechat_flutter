@@ -35,12 +35,12 @@ class _TextItemContainerState extends State<TextItemContainer> {
       actions: ['复制', '转发', '收藏', '撤回', '删除'],
       child: new Container(
         width: widget.text.length > 24 ? (winWidth(context) - 66) - 100 : null,
-        padding: EdgeInsets.all(5.0),
+        padding: EdgeInsets.all(10.0),
         decoration: BoxDecoration(
-          color: widget.isMyself ? Color(0xff98E165) : Colors.white,
+          color: widget.isMyself ? AppColors.ChatBoxMyPopColor : AppColors.ChatBoxPopColor,
           borderRadius: BorderRadius.all(Radius.circular(5.0)),
         ),
-        margin: EdgeInsets.only(right: 7.0),
+        margin: EdgeInsets.only(right: 10.0),
         child: ExtendedText(
           widget.text ?? '文字为空',
           maxLines: 99,

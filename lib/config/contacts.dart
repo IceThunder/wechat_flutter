@@ -29,7 +29,10 @@ class AppColors {
   static const ButtonArrowColor = Color(0xffadadad);
   static const NewTagBg = Color(0xfffa5251);
   static const ChatBoxBg = Color(0xfff7f7f7);
-  static const ChatBoxCursorColor = Color(0xffbf0879);
+  static const ChatBoxCursorColor = Color(0xff07c160);
+  static const ChatBoxMyPopColor = Color(0xff07c160);
+  static const ChatBoxPopColor = Colors.white;
+  static const ChatBoxTextColor = Color(0xff181818);
 }
 
 class AppStyles {
@@ -84,7 +87,7 @@ class AppStyles {
   static const ChatBoxTextStyle = TextStyle(
       textBaseline: TextBaseline.alphabetic,
       fontSize: Constants.ContentTextSize,
-      color: const Color(0xff181818));
+      color: AppColors.ChatBoxTextColor);
 }
 
 class Routes {
@@ -103,7 +106,7 @@ class Constants {
   static const ConversationMuteIconSize = 18.0;
   static const ContactAvatarSize = 42.0;
   static const TitleTextSize = 16.0;
-  static const ContentTextSize = 20.0;
+  static const ContentTextSize = 15.0;
   static const DesTextSize = 13.0;
   static const IndexBarWidth = 24.0;
   static const IndexLetterBoxSize = 64.0;

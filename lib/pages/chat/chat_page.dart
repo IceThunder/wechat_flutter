@@ -155,7 +155,7 @@ class _ChatPageState extends State<ChatPage> {
       }),
       onChanged: (v) => setState(() {}),
       decoration: InputDecoration(
-          border: InputBorder.none, contentPadding: const EdgeInsets.all(5.0)),
+          border: InputBorder.none, contentPadding: const EdgeInsets.all(2.0)),
       controller: _textController,
       focusNode: _focusNode,
       maxLines: 99,
@@ -175,6 +175,7 @@ class _ChatPageState extends State<ChatPage> {
           ? new ChatDetailsBody(sC: _sC, chatData: chatData)
           : new Spacer(),
       new ChatDetailsRow(
+        // 底部输入工具栏
         voiceOnTap: () => onTapHandle(ButtonType.voice),
         onEmojio: () {
           if (_isMore) {
@@ -205,6 +206,7 @@ class _ChatPageState extends State<ChatPage> {
       new Container(
         height: _isMore && !_focusNode.hasFocus ? keyboardHeight : 0.0,
         width: winWidth(context),
+        // 底部隐藏工具栏背景色
         color: AppColors.ChatBoxBg,
         child: new IndicatorPageView(
           pageC: pageC,
@@ -220,6 +222,7 @@ class _ChatPageState extends State<ChatPage> {
       ),
     ];
 
+    // 聊天页顶部bar菜单
     var rWidget = [
       new InkWell(
         child: new Image.asset('assets/images/right_more.png'),
