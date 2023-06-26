@@ -8,7 +8,7 @@ const Color ComMomBGColor = Color.fromRGBO(240, 240, 245, 1.0);
 
 const bgColor = Color.fromRGBO(255, 255, 255, 1);
 
-const mainThemeColor = Color.fromRGBO(241, 66, 255, 1.0);
+const mainThemeColor = Color.fromRGBO(121, 8, 191, 1.0);
 
 const chatBg = Color(0xfff8c8ff);
 

@@ -1,5 +1,5 @@
 {
-  "appName": "WeChat",
+  "appName": "WeChatAI",
   "label": "test",
   "languageTitle": "Change Language",
   "multiLanguage": "Multi-Language",
@@ -31,10 +31,10 @@
   "passWord": "passWord",
   "pwTip": "Fill in the password",
   "readAgree": "ReadAgree ",
-  "protocolName": "[ WeChat protocol ]",
-  "protocolTitle": "WeChat Software License and Service Agreement",
+  "protocolName": "[ WeChatAI protocol ]",
+  "protocolTitle": "WeChatAI Software License and Service Agreement",
   "protocolUrl": "https://weixin.qq.com/cgi-bin/readtemplate?lang=en&t=weixin_agreement&s=default&cc=CN",
-  "weChat": "WeChat",
+  "weChat": "WeChatAI",
   "contacts": "Contacts",
   "discover": "Discover",
   "me": "Me"

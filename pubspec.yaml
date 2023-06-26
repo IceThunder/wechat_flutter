@@ -71,7 +71,7 @@ dependencies:
   package_info_plus: ^1.4.0 #flutter 2.10使用这个
   #音频处理
 #  flutter_sound: 1.7.0 # flutter 2.10之前的用这个
-  flutter_sound: ^9.1.2 # flutter 2.10用这个
+  flutter_sound: 9.2.13 # flutter 2.10用这个
   #权限处理
 #  permission_handler: 3.1.0  # flutter 2.10之前的用这个
   permission_handler: ^9.2.0 # flutter 2.10用这个

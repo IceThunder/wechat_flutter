@@ -1,6 +1,6 @@
 {
-    "name": "wechat_flutter",
-    "short_name": "wechat_flutter",
+    "name": "wechatai",
+    "short_name": "wechatai",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

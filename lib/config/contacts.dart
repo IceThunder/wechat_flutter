@@ -1,61 +1,61 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const PrimaryColor = 0xffebebeb;
-  static const BackgroundColor = 0xffededed;
-  static const AppBarColor = 0xffededed;
-  static const ActionIconColor = 0xff000000;
-  static const ActionMenuBgColor = 0xff4c4c4c;
-  static const CardBgColor = 0xffffffff;
-  static const TabIconNormal = 0xff999999;
-  static const TabIconActive = 0xff46c11b;
-  static const AppBarPopupMenuColor = 0xffffffff;
-  static const TitleColor = 0xff181818;
-  static const ConversationItemBg = 0xffffffff;
-  static const DesTextColor = 0xff999999;
-  static const NotifyDotBg = 0xfff85351;
-  static const NotifyDotText = 0xffffffff;
-  static const ConversationMuteIcon = 0xffd8d8d8;
+  static const PrimaryColor = Color(0xffebebeb);
+  static const BackgroundColor = Color(0xffededed);
+  static const AppBarColor = Color(0xffededed);
+  static const ActionIconColor = Color(0xff000000);
+  static const ActionMenuBgColor = Color(0xff4c4c4c);
+  static const CardBgColor = Color(0xffffffff);
+  static const TabIconNormal = Color(0xff999999);
+  static const TabIconActive = Color(0xff46c11b);
+  static const AppBarPopupMenuColor = Color(0xffffffff);
+  static const TitleColor = Color(0xff181818);
+  static const ConversationItemBg = Color(0xffffffff);
+  static const DesTextColor = Color(0xff999999);
+  static const NotifyDotBg = Color(0xfff85351);
+  static const NotifyDotText = Color(0xffffffff);
+  static const ConversationMuteIcon = Color(0xffd8d8d8);
   static const DeviceInfoItemBg = AppBarColor;
-  static const DeviceInfoItemText = 0xff606062;
-  static const DeviceInfoItemIcon = 0xff606062;
-  static const ContactGroupTitleBg = 0xffebebeb;
-  static const ContactGroupTitleText = 0xff888888;
+  static const DeviceInfoItemText = Color(0xff606062);
+  static const DeviceInfoItemIcon = Color(0xff606062);
+  static const ContactGroupTitleBg = Color(0xffebebeb);
+  static const ContactGroupTitleText = Color(0xff888888);
   static const IndexLetterBoxBg = Colors.black45;
   static const HeaderCardBg = Colors.white;
-  static const HeaderCardTitleText = 0xff353535;
-  static const HeaderCardDesText = 0xff7f7f7f;
-  static const ButtonDesText = 0xff8c8c8c;
-  static const ButtonArrowColor = 0xffadadad;
-  static const NewTagBg = 0xfffa5251;
-  static const ChatBoxBg = 0xfff7f7f7;
-  static const ChatBoxCursorColor = 0xff07c160;
+  static const HeaderCardTitleText = Color(0xff353535);
+  static const HeaderCardDesText = Color(0xff7f7f7f);
+  static const ButtonDesText = Color(0xff8c8c8c);
+  static const ButtonArrowColor = Color(0xffadadad);
+  static const NewTagBg = Color(0xfffa5251);
+  static const ChatBoxBg = Color(0xfff7f7f7);
+  static const ChatBoxCursorColor = Color(0xffbf0879);
 }
 
 class AppStyles {
   static const TitleStyle = TextStyle(
     fontSize: Constants.TitleTextSize,
-    color: const Color(AppColors.TitleColor),
+    color: const Color(0xff181818),
   );
 
   static const DesStyle = TextStyle(
     fontSize: Constants.DesTextSize,
-    color: Color(AppColors.DesTextColor),
+    color: Color(0xff999999),
   );
 
   static const UnreadMsgCountDotStyle = TextStyle(
     fontSize: 12.0,
-    color: Color(AppColors.NotifyDotText),
+    color: Color(0xffffffff),
   );
 
   static const DeviceInfoItemTextStyle = TextStyle(
     fontSize: Constants.DesTextSize,
-    color: Color(AppColors.DeviceInfoItemText),
+    color: Color(0xff606062),
   );
 
   static const GroupTitleItemTextStyle = TextStyle(
     fontSize: 14.0,
-    color: Color(AppColors.ContactGroupTitleText),
+    color: Color(0xff888888),
   );
 
   static const IndexLetterBoxTextStyle =
@@ -63,17 +63,17 @@ class AppStyles {
 
   static const HeaderCardTitleTextStyle = TextStyle(
       fontSize: 20.0,
-      color: Color(AppColors.HeaderCardTitleText),
+      color: Color(0xff353535),
       fontWeight: FontWeight.bold);
 
   static const HeaderCardDesTextStyle = TextStyle(
       fontSize: 14.0,
-      color: Color(AppColors.HeaderCardDesText),
+      color: Color(0xff7f7f7f),
       fontWeight: FontWeight.normal);
 
   static const ButtonDesTextStyle = TextStyle(
       fontSize: 12.0,
-      color: Color(AppColors.ButtonDesText),
+      color: Color(0xff8c8c8c),
       fontWeight: FontWeight.bold);
 
   static const NewTagTextStyle = TextStyle(
@@ -84,7 +84,7 @@ class AppStyles {
   static const ChatBoxTextStyle = TextStyle(
       textBaseline: TextBaseline.alphabetic,
       fontSize: Constants.ContentTextSize,
-      color: const Color(AppColors.TitleColor));
+      color: const Color(0xff181818));
 }
 
 class Routes {

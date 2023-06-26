@@ -53,7 +53,7 @@ class ChatDetailsRowState extends State<ChatDetailsRow> {
         height: 50.0,
         padding: EdgeInsets.symmetric(horizontal: 8.0),
         decoration: BoxDecoration(
-          color: Color(AppColors.ChatBoxBg),
+          color: AppColors.ChatBoxBg,
           border: Border(
             top: BorderSide(color: lineColor, width: Constants.DividerWidth),
             bottom: BorderSide(color: lineColor, width: Constants.DividerWidth),

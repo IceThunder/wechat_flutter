@@ -159,7 +159,7 @@ class _ChatPageState extends State<ChatPage> {
       controller: _textController,
       focusNode: _focusNode,
       maxLines: 99,
-      cursorColor: const Color(AppColors.ChatBoxCursorColor),
+      cursorColor: AppColors.ChatBoxCursorColor,
       style: AppStyles.ChatBoxTextStyle,
     );
   }
@@ -205,7 +205,7 @@ class _ChatPageState extends State<ChatPage> {
       new Container(
         height: _isMore && !_focusNode.hasFocus ? keyboardHeight : 0.0,
         width: winWidth(context),
-        color: Color(AppColors.ChatBoxBg),
+        color: AppColors.ChatBoxBg,
         child: new IndicatorPageView(
           pageC: pageC,
           pages: List.generate(2, (index) {

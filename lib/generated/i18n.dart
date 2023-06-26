@@ -21,7 +21,7 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
-  String get appName => "WeChat";
+  String get appName => "WeChatAI";
   String get australia => "Australia";
   String get canada => "Canada";
   String get chinaMainland => "China Mainland";
@@ -47,7 +47,7 @@ class S implements WidgetsLocalizations {
   String get phoneNumber => "Phone";
   String get phoneNumberHint => "Please fill in your phone number";
   String get protocolName => "[ WeChat protocol ]";
-  String get protocolTitle => "WeChat Software License and Service Agreement";
+  String get protocolTitle => "WeChatAI Software License and Service Agreement";
   String get protocolUrl => "https://weixin.qq.com/cgi-bin/readtemplate?lang=en&t=weixin_agreement&s=default&cc=CN";
   String get pwTip => "Fill in the password";
   String get readAgree => "ReadAgree ";
@@ -58,7 +58,7 @@ class S implements WidgetsLocalizations {
   String get taiwan => "Taiwan";
   String get uS => "United States";
   String get userLoginTip => "WeChat number / QQ number / email";
-  String get weChat => "WeChat";
+  String get weChat => "WeChatAI";
   String get weChatSecurityCenter => "Security";
 }
 

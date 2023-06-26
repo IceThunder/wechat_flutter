@@ -165,7 +165,7 @@ class ContactItemState extends State<ContactItem> {
             height: GROUP_TITLE_HEIGHT,
             padding: EdgeInsets.only(left: 16.0, right: 16.0),
             decoration: BoxDecoration(
-              color: const Color(AppColors.ContactGroupTitleBg),
+              color: AppColors.ContactGroupTitleBg,
               border: Border(
                 top: BorderSide(color: lineColor, width: 0.2),
                 bottom: BorderSide(color: lineColor, width: 0.2),

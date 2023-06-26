@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage>
     super.build(context);
     if (!listNoEmpty(_chatData)) return new HomeNullView();
     return new Container(
-      color: Color(AppColors.BackgroundColor),
+      color: AppColors.BackgroundColor,
       child: new ScrollConfiguration(
         behavior: MyBehavior(),
         child: new ListView.builder(
